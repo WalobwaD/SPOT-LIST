@@ -5,6 +5,7 @@ import Playlist from '../PlayList/PlayList';
 import SearchBar from '../SearchBar/SearchBar';
 import SearchResults from '../SearchResults/SearchResults';
 import Spotify from '../../util/Spotify';
+import NavBar from '../NavBar/NavBar';
 
 export default class App extends React.Component {
   constructor(props) {
@@ -63,8 +64,9 @@ export default class App extends React.Component {
   render() {
     return (
       <div>
-        <h1>SP<span className="highlight">OOO</span>TLIST</h1>
+        {/* <h1>SP<span className="highlight">OOO</span>TLIST</h1> */}
         <div className="App">
+        <NavBar/>
           <SearchBar onSearch={this.search} />
           <div className="App-playlist">
             <SearchResults searchResults={this.state.searchResults}
