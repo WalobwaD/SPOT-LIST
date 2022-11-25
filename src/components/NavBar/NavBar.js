@@ -1,10 +1,13 @@
 import React from "react"
 import "./NavBar.css"
+import { Link } from "react-router-dom"
 
+
+import ReadMe from "../ReadMe/ReadMe"
 export default class NavBar extends React.Component{
     render(){
         return(
-            <section>
+            <section className="nav-sec">
                 <nav>
                     <div className="music">
                         <div className="bar"></div>
@@ -28,7 +31,10 @@ export default class NavBar extends React.Component{
                         <div className="bar"></div>
                     </div>
                     <div className="icon">
-                        <i class="fa-brands fa-spotify"></i>
+                        <i className="fa-brands fa-spotify text-2xl text-purple-600"><span className="pl-2">Spot-List</span></i>
+                    </div>
+                    <div className="readme">
+                        <Link to="readme">Read Me!</Link>
                     </div>
                 </nav>
             </section>

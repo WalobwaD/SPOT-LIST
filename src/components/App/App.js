@@ -1,11 +1,18 @@
 import React from 'react';
 import './App.css';
 
+// import Switch from '@mui/material/Switch';
+// import { createContext } from "react"
+
+
 import Playlist from '../PlayList/PlayList';
 import SearchBar from '../SearchBar/SearchBar';
 import SearchResults from '../SearchResults/SearchResults';
 import Spotify from '../../util/Spotify';
 import NavBar from '../NavBar/NavBar';
+import Footer from '../Footer/Footer';
+
+// export const ThemeContext = createContext(null)
 
 export default class App extends React.Component {
   constructor(props) {
@@ -22,6 +29,7 @@ export default class App extends React.Component {
     this.removeTrack = this.removeTrack.bind(this);
     this.updatePlaylistName = this.updatePlaylistName.bind(this);
     this.savePlaylist = this.savePlaylist.bind(this);
+    // this.toggleTheme = this.toggleTheme.bind(this)
   }
 
   search(term) {
@@ -61,24 +69,39 @@ export default class App extends React.Component {
     });
   }
 
+  // toggleTheme(){
+  //   this.setState((prevTheme)=>(prevTheme==='light'?'dark':'light'))
+  // }
   render() {
     return (
-      <div>
-        {/* <h1>SP<span className="highlight">OOO</span>TLIST</h1> */}
-        <div className="App">
-        <NavBar/>
+      
+        <div>
+          <div className="App">
+
+          <NavBar/>
+
+          {/* <Switch
+            className="switch"
+            checked={this.state.theme === 'light'}
+            onChange={this.toggleTheme}
+            size="small"
+            color="secondary"
+            inputProps={{ 'aria-label': 'controlled' }}
+          /> */}
           <SearchBar onSearch={this.search} />
-          <div className="App-playlist">
-            <SearchResults searchResults={this.state.searchResults}
-                           onAdd={this.addTrack} />
-            <Playlist playlistName={this.state.playlistName}
-                      playlistTracks={this.state.playlistTracks}
-                      onNameChange={this.updatePlaylistName}
-                      onRemove={this.removeTrack}
-                      onSave={this.savePlaylist} />
+            <div className="App-playlist">
+              <SearchResults searchResults={this.state.searchResults}
+                            onAdd={this.addTrack} />
+              <Playlist playlistName={this.state.playlistName}
+                        playlistTracks={this.state.playlistTracks}
+                        onNameChange={this.updatePlaylistName}
+                        onRemove={this.removeTrack}
+                        onSave={this.savePlaylist} />
+            </div>
+            <Footer/>
           </div>
         </div>
-      </div>
+
     );
   }
 }

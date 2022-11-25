@@ -1,0 +1,45 @@
+.read-sec {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  background-color: #222326;
+  min-height: 120vh;
+  width: 100%;
+}
+.read-sec .icon {
+  color: #1db954;
+  margin-top: 50px;
+  opacity: 75%;
+}
+.read-sec .about {
+  margin-top: 20px;
+  font-family: "Poppins", sans-serif;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.read-sec .about .line {
+  border-color: #1db954;
+  width: 15%;
+  margin: 5px auto;
+  opacity: 75%;
+}
+.read-sec .about p {
+  margin: auto;
+  margin-top: 10px;
+  font-size: medium;
+  width: 70%;
+  text-align: center;
+}
+.read-sec .about p a {
+  transition: 0.5s;
+}
+.read-sec .about p a:hover {
+  color: #1db954;
+}
+.read-sec .about .list {
+  width: 70%;
+  margin: auto;
+}
+
+/*# sourceMappingURL=ReadMe.css.map */

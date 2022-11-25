@@ -1,0 +1,49 @@
+.foot-sec {
+  margin-top: 50px;
+  width: 100%;
+  height: 110vh;
+}
+.foot-sec h2 {
+  text-align: center;
+}
+.foot-sec hr {
+  width: 55%;
+  margin: 10px auto;
+  opacity: 75%;
+}
+.foot-sec .image {
+  background-image: url("./background_photo_desktop.jpg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  height: 80vh;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.foot-sec .image .info {
+  width: 50%;
+}
+.foot-sec .image .view {
+  padding: 16px;
+  margin-left: 20px;
+  border-radius: 35px;
+  background-color: aliceblue;
+  color: #1db954;
+  transition: 0.5s;
+}
+.foot-sec .image .view:hover {
+  color: aliceblue;
+  background-color: #1db954;
+}
+.foot-sec .icons {
+  margin: 60px 30px 60px 30px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.foot-sec .icons i {
+  font-size: 1.4rem;
+}
+
+/*# sourceMappingURL=Footer.css.map */

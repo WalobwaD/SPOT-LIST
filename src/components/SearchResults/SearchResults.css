@@ -3,10 +3,20 @@
     height: 950px;
     overflow-y: scroll;
     padding: .88rem;
-    background-color: rgba(1, 12, 63, 0.7);
+    background-color:  #222326;
     box-shadow: 0 4px 2px 2px #000000;
+    margin-left: 20px;
+    margin-right: 5px;
+    border-radius: 16px;
   }
-  
+  .SearchResults h2{
+    color: #1db954;
+    background-color: #222326;
+
+    font-size: 1.2rem;
+
+  }
+
   ::-webkit-scrollbar {
       width: 0px;
       background: transparent;
